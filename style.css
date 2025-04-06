@@ -1,0 +1,198 @@
+/* 
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #5e4b8b, #3a3a7b); 
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+.music-player {
+  background-color: rgba(130, 6, 95, 0.7); 
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(92, 5, 88, 0.6);
+  text-align: center;
+  width: 350px;
+  max-width: 100%;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+input[type="file"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff5c8d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="file"]:hover {
+  background-color: #ff357b;
+}
+
+audio {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background-color: #d6358b;
+  padding: 8px;
+}
+
+
+button {
+  padding: 15px 20px;
+  font-size: 26px;
+  background-color: #ae1c59; 
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #fa0aee; 
+  transform: scale(1.1); 
+}
+
+
+#song-title {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #dcdcdc;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
+}
+
+
+.music-player:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+
+@media (max-width: 400px) {
+  .music-player {
+    width: 90%;
+    padding: 20px;
+  }
+
+  button {
+    font-size: 22px;
+    padding: 12px 22px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  #song-title {
+    font-size: 18px;
+  }
+} */
+
+Basic reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #fbfbfc, #5328b6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background: rgba(75, 98, 211, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+
+#player {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#song-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+audio {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#play {
+  background: #8d57a3;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#play:hover {
+  background: #922e9f;
+}
+
+
+#song-list {
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#song-list li {
+  padding: 10px;
+  border-bottom: 1px solid #555;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#song-list li:hover {
+  background-color: #444;
+}
