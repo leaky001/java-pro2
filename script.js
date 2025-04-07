@@ -32,25 +32,25 @@ const songTitle = document.getElementById('song-title');
 const songList = document.getElementById('song-list');
 
 let currentSongIndex = 0;
-let songs = [];
+let songs = []; // i stimulate an api to call all the songs each song has a tittle artist 
 
 
 async function fetchSongs() {
   
-  songs = [
+  songs = [  
     {
       title: 'Chill Vibes',
-      artist: 'Lo-Fi Artist',
+      artist: 'muiz ',
       url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'
     },
     {
       title: 'Ocean Breeze',
-      artist: 'Relax Beats',
+      artist: 'kabir ',
       url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3'
     },
     {
       title: 'Evening Flow',
-      artist: 'Calm Tones',
+      artist: 'feranmi ',
       url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3'
     }
   ];
