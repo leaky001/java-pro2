@@ -34,9 +34,9 @@ const songList = document.getElementById('song-list');
 let currentSongIndex = 0;
 let songs = [];
 
-// Fetch songs (mock API for now)
+
 async function fetchSongs() {
-  // Simulating API data
+  
   songs = [
     {
       title: 'Chill Vibes',
@@ -59,7 +59,7 @@ async function fetchSongs() {
   loadSong(0);
 }
 
-// Display songs in the list
+
 function renderSongList() {
   songList.innerHTML = '';
   songs.forEach((song, index) => {
@@ -74,7 +74,7 @@ function renderSongList() {
   });
 }
 
-// Load a song
+
 function loadSong(index) {
   currentSongIndex = index;
   const song = songs[index];
@@ -82,7 +82,7 @@ function loadSong(index) {
   songTitle.textContent = `${song.title} - ${song.artist}`;
 }
 
-// Play/Pause button
+
 playBtn.addEventListener('click', () => {
   if (audio.src) {
     if (audio.paused) {

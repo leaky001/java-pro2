@@ -133,7 +133,7 @@ body {
 }
 
 .app {
-  background: rgba(75, 98, 211, 0.6);
+  background: rgba(75, 98, 211, 0);
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
@@ -188,7 +188,7 @@ audio {
 
 #song-list li {
   padding: 10px;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #1221c2;
   cursor: pointer;
   transition: background-color 0.2s;
 }
