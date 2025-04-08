@@ -32,11 +32,12 @@ const songTitle = document.getElementById('song-title');
 const songList = document.getElementById('song-list');
 
 let currentSongIndex = 0;
-let songs = []; // i stimulate an api to call all the songs each song has a tittle artist 
+let songs = []; // i stimulate an api to call all the songs each song has a tittle artist and url to all the songs
 
 
-async function fetchSongs() {
-  
+
+async function fetchSongs() { 
+  // i used array to hold the list of song objects, each with title  artist and url to stimulate the API call
   songs = [  
     {
       title: 'Chill Vibes',
@@ -59,7 +60,7 @@ async function fetchSongs() {
   loadSong(0);
 }
 
-
+// This function clears any existing song entries and iterates over the songs array to create a list item for each song. Clicking a list item loads and plays the selected 
 function renderSongList() {
   songList.innerHTML = '';
   songs.forEach((song, index) => {
@@ -74,13 +75,14 @@ function renderSongList() {
   });
 }
 
-
+// loadsong functionset the audio source to the selected song in url and updates it to display song title
 function loadSong(index) {
   currentSongIndex = index;
   const song = songs[index];
   audio.src = song.url;
   songTitle.textContent = `${song.title} - ${song.artist}`;
 }
+
 
 
 playBtn.addEventListener('click', () => {
@@ -95,6 +97,5 @@ playBtn.addEventListener('click', () => {
   }
 });
 
-// Initialize
 fetchSongs();
 
